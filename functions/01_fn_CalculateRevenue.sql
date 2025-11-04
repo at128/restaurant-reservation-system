@@ -7,10 +7,7 @@
 -- Returns: Total revenue (0 if no orders)
 -- ========================================
 
-DROP FUNCTION IF EXISTS fn_CalculateRevenue;
-GO
-
-CREATE FUNCTION fn_CalculateRevenue(@RestaurantId INT)
+CREATE OR ALTER FUNCTION fn_CalculateRevenue(@RestaurantId INT)
 RETURNS DECIMAL(18,2)
 AS
 BEGIN
