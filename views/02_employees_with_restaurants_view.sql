@@ -14,6 +14,6 @@ SELECT
     r.Name AS [Restaurant Name],
     r.OpeningHours AS [Restaurant Opening Hours]
 FROM Employees e
-INNER JOIN Restaurants r 
+LEFT JOIN Restaurants r 
     ON r.RestaurantID = e.RestaurantID;
 GO
