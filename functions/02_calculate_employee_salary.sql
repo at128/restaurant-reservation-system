@@ -12,10 +12,8 @@
 -- Returns: Calculated salary (0 if no orders or undefined position)
 -- ========================================
 
-DROP FUNCTION IF EXISTS fn_CalculateEmployeeSalary;
-GO
 
-CREATE FUNCTION fn_CalculateEmployeeSalary(@EmployeeId INT)
+CREATE OR ALTER FUNCTION fn_CalculateEmployeeSalary(@EmployeeId INT)
 RETURNS INT
 AS
 BEGIN
