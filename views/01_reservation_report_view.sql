@@ -5,10 +5,7 @@
 --              with customer, restaurant, and table details
 -- ========================================
 
-DROP VIEW IF EXISTS vw_ReservationReport;
-GO
-
-CREATE VIEW vw_ReservationReport AS
+CREATE OR ALTER VIEW vw_ReservationReport AS
 SELECT 
     r.ReservationID,
     r.ReservationDate AS [Reservation Date],
