@@ -4,10 +4,8 @@
 -- Description: Lists all employees with their restaurant assignments
 -- ========================================
 
-DROP VIEW IF EXISTS vw_EmployeesWithRestaurants;
-GO
 
-CREATE VIEW vw_EmployeesWithRestaurants AS
+CREATE OR ALTER VIEW vw_EmployeesWithRestaurants AS
 SELECT 
     e.FirstName + ' ' + e.LastName AS [Employee Name],
     e.Position,
